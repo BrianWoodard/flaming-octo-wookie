@@ -30,7 +30,7 @@ func generateRandomData(var data:Array<dataObject>) -> Array<dataObject>{
     for var i = 0; i<NUMBER_OF_ITEMS; i+=1{
         var startTime = Int(arc4random_uniform(100));
         var windowOfTime = Int(arc4random_uniform(20))+1;
-        var tempTupe: dataObject = (arrayOfRandomData[Int(arc4random_uniform(6))],startTime,startTime+windowOfTime);
+        var tempTupe: dataObject = (arrayOfRandomData[Int(arc4random_uniform(7))],startTime,startTime+windowOfTime);
         data.append(tempTupe);
     }
     return data;
